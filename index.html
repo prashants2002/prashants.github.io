@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Display</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Product Display</h1>
+
+    <div id="controls">
+      <select multiple id="availableFields" size="4"></select>
+      <div id="buttonGroup">
+        <button onclick="addFields()">>></button>
+        <button onclick="removeFields()"><<</button>
+      </div>
+      <select multiple id="displayedFields" size="4"></select>
+    </div>
+
+    <table id="productTable">
+      <!-- Table headers will be added dynamically -->
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
